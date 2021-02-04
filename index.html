@@ -1,20 +1,820 @@
 <!DOCTYPE html>
 <html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://wallpaperaccess.com/full/1225736.jpg");
+  min-height: 80%;
+}
+</style>
 <body>
 
-<h1>Marvel Characters</h1>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#character" class="w3-bar-item w3-button">CHARACTER</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">FOR PERSONAL USE ONLY</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Marvel<br>Character</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#character" class="w3-button w3-xxlarge w3-black">Choose</a></p>
+  </div>
+</header>
 
-<h2>Marvel Future Fight</h2>
-<a href="https://www.w3schools.com">Character</a>
-<hr>
+<!-- Marvel Game Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="character">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"> Marvel Game</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Future Fight');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Future Fight</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Avengers Alliance');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Avengers Alliance</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Contest of Champions');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Contest of Champions</div>
+      </a>
+    </div>
 
-<h2>Marvel Avengers Alliance</h2>
-<a href="https://www.w3schools.com">Character</a>
-<hr>
+    <div id="Future Fight" class="w3-container menu w3-padding-32 w3-white">   
+    <h1><b>Blast</b></h1>
+      <a href="https://www.serebii.net/">Adam Warlock</a>
+      <a href="https://www.w3schools.com">Ancient One</a>
+      <a href="https://www.w3schools.com">Baron Mordo</a>
+      <a href="https://www.w3schools.com">Bishop</a>
+      <a href="https://www.w3schools.com">Blue Dragon</a>
+      <a href="https://www.w3schools.com">Cable</a>
+      <a href="https://www.w3schools.com">Captain America (Sharon Rogers)</a>
+      <a href="https://www.w3schools.com">Crystal</a>
+      <a href="https://www.w3schools.com">Cyclops</a>
+      <a href="https://www.w3schools.com">Daisy Johnson</a>
+      <a href="https://www.w3schools.com">Dazzler</a>
+      <a href="https://www.w3schools.com">Doctor Strange</a>
+      <a href="https://www.w3schools.com">Emma Frost</a>
+      <a href="https://www.w3schools.com">Enchantress</a>
+      <a href="https://www.w3schools.com">Gambit</a>
+      <a href="https://www.w3schools.com">Human Torch</a>
+      <a href="https://www.w3schools.com">Hydro-Man</a>
+      <a href="https://www.w3schools.com">Iceman</a>
+      <a href="https://www.w3schools.com">Inferno</a>
+      <a href="https://www.w3schools.com">Invisible Woman</a>
+      <a href="https://www.w3schools.com">Iron Man</a>
+      <a href="https://www.w3schools.com">Ironheart</a>
+      <a href="https://www.w3schools.com">Jean Grey</a>
+      <a href="https://www.w3schools.com">Jubilee</a>
+      <a href="https://www.w3schools.com">Kaecilius</a>
+      <a href="https://www.w3schools.com">Kid Omega</a>
+      <a href="https://www.w3schools.com">Lash</a>
+      <a href="https://www.w3schools.com">Lincoln Campbell</a>
+      <a href="https://www.w3schools.com">M.O.D.O.K.</a>
+      <a href="https://www.w3schools.com">Magik</a>
+      <a href="https://www.w3schools.com">Magneto</a>
+      <a href="https://www.w3schools.com">Malekith</a>
+      <a href="https://www.w3schools.com">Mantis</a>
+      <a href="https://www.w3schools.com">Maximus</a>
+      <a href="https://www.w3schools.com">Mister Sinister</a>
+      <a href="https://www.w3schools.com">Moon Girl</a>
+      <a href="https://www.w3schools.com">Moonstone</a>
+      <a href="https://www.w3schools.com">Mysterio</a>
+      <a href="https://www.w3schools.com">Negasonic Teenage Warhead</a>
+      <a href="https://www.w3schools.com">Phil Coulson</a>
+      <a href="https://www.w3schools.com">Professor X</a>
+      <a href="https://www.w3schools.com">Psylocke</a>
+      <a href="https://www.w3schools.com">Rachel Summers</a>
+      <a href="https://www.w3schools.com">Red Skull</a>
+      <a href="https://www.w3schools.com">Rescue</a>
+      <a href="https://www.w3schools.com">Rocket Raccoon</a>
+      <a href="https://www.w3schools.com">Scarlet Witch</a>
+      <a href="https://www.w3schools.com">Sister Grimm</a>
+      <a href="https://www.w3schools.com">Songbird</a>
+      <a href="https://www.w3schools.com">Spider-Woman</a>
+      <a href="https://www.w3schools.com">Star-Lord</a>
+      <a href="https://www.w3schools.com">Storm</a>
+      <a href="https://www.w3schools.com">Stryfe</a>
+      <a href="https://www.w3schools.com">Ulysses Klaue</a>
+      <a href="https://www.w3schools.com">Vision</a>
+      <a href="https://www.w3schools.com">War Machine</a>
+      <a href="https://www.w3schools.com">Wasp</a>
+      <a href="https://www.w3schools.com">Wasp (Nadia Van Dyne)</a>
+      <a href="https://www.w3schools.com">Weapon Hex</a>
+      <a href="https://www.w3schools.com">Whiplash</a>
+      <a href="https://www.w3schools.com">Wiccan</a>
+      <a href="https://www.w3schools.com">Yellowjacket</a>
+      <hr>
+      
+    <h1><b>Combat</b></h1>
+      <a href="https://www.w3schools.com">Abomination</a>
+      <a href="https://www.w3schools.com">Absorbing Man</a>
+      <a href="https://www.w3schools.com">Agent Venom</a>
+      <a href="https://www.w3schools.com">America Chavez</a>
+      <a href="https://www.w3schools.com">Apocalypse</a>
+      <a href="https://www.w3schools.com">Ares</a>
+      <a href="https://www.w3schools.com">Beast</a>
+      <a href="https://www.w3schools.com">Black Panther</a>
+      <a href="https://www.w3schools.com">Blade</a>
+      <a href="https://www.w3schools.com">Bullseye</a>
+      <a href="https://www.w3schools.com">Captain America</a>
+      <a href="https://www.w3schools.com">Carnage</a>
+      <a href="https://www.w3schools.com">Colossus</a>
+      <a href="https://www.w3schools.com">Crescent</a>
+      <a href="https://www.w3schools.com">Crossbones</a>
+      <a href="https://www.w3schools.com">Daken</a>
+      <a href="https://www.w3schools.com">Deathlok</a>
+      <a href="https://www.w3schools.com">Doctor Octopus</a>
+      <a href="https://www.w3schools.com">Drax</a>
+      <a href="https://www.w3schools.com">Giant-Man</a>
+      <a href="https://www.w3schools.com">Gladiator</a>
+      <a href="https://www.w3schools.com">Goliath</a>
+      <a href="https://www.w3schools.com">Gorgon</a>
+      <a href="https://www.w3schools.com">Gorilla-Man</a>
+      <a href="https://www.w3schools.com">Groot</a>
+      <a href="https://www.w3schools.com">Hogun</a>
+      <a href="https://www.w3schools.com">Hulk</a>
+      <a href="https://www.w3schools.com">Hulk (Amadeus Cho)</a>
+      <a href="https://www.w3schools.com">Hulkling</a>
+      <a href="https://www.w3schools.com">Iron Fist</a>
+      <a href="https://www.w3schools.com">Iron Man Mark 44 (Hulkbuster)</a>
+      <a href="https://www.w3schools.com">Jessica Jones</a>
+      <a href="https://www.w3schools.com">Juggernaut</a>
+      <a href="https://www.w3schools.com">Killmonger</a>
+      <a href="https://www.w3schools.com">Kingpin</a>
+      <a href="https://www.w3schools.com">Lizard</a>
+      <a href="https://www.w3schools.com">Luke Cage</a>
+      <a href="https://www.w3schools.com">Minn-Erva</a>
+      <a href="https://www.w3schools.com">Mister Fantastic</a>
+      <a href="https://www.w3schools.com">Molten Man</a>
+      <a href="https://www.w3schools.com">Moon Knight</a>
+      <a href="https://www.w3schools.com">Morbius</a>
+      <a href="https://www.w3schools.com">Ms. Marvel (Kamala Khan)</a>
+      <a href="https://www.w3schools.com">Namor</a>
+      <a href="https://www.w3schools.com">Nebula</a>
+      <a href="https://www.w3schools.com">Punisher</a>
+      <a href="https://www.w3schools.com">Red Guardian</a>
+      <a href="https://www.w3schools.com">Red Hulk</a>
+      <a href="https://www.w3schools.com">Red She-Hulk</a>
+      <a href="https://www.w3schools.com">Rhino</a>
+      <a href="https://www.w3schools.com">Sabretooth</a>
+      <a href="https://www.w3schools.com">Sandman</a>
+      <a href="https://www.w3schools.com">Scream</a>
+      <a href="https://www.w3schools.com">Shang-Chi</a>
+      <a href="https://www.w3schools.com">She-Hulk</a>
+      <a href="https://www.w3schools.com">Sif</a>
+      <a href="https://www.w3schools.com">Skurge</a>
+      <a href="https://www.w3schools.com">Sword Master</a>
+      <a href="https://www.w3schools.com">Taskmaster</a>
+      <a href="https://www.w3schools.com">Thing</a>
+      <a href="https://www.w3schools.com">Titania</a>
+      <a href="https://www.w3schools.com">Ulik</a>
+      <a href="https://www.w3schools.com">Valkyrie</a>
+      <a href="https://www.w3schools.com">Venom</a>
+      <a href="https://www.w3schools.com">Volstagg</a>
+      <a href="https://www.w3schools.com">War Tiger</a>
+      <a href="https://www.w3schools.com">Warpath</a>
+      <a href="https://www.w3schools.com">Warwolf</a>
+      <a href="https://www.w3schools.com">White Tiger</a>
+      <a href="https://www.w3schools.com">Wolverine</a>
+      <hr>
+     
+    <h1><b>Speed</b></h1>
+      <a href="https://www.w3schools.com">Aero</a> 
+      <a href="https://www.w3schools.com">Agent 13</a>
+      <a href="https://www.w3schools.com">Angel</a>
+      <a href="https://www.w3schools.com">Ant-Man</a>
+      <a href="https://www.w3schools.com">Arachknight</a>
+      <a href="https://www.w3schools.com">Baron Zemo</a>
+      <a href="https://www.w3schools.com">Black Cat</a>
+      <a href="https://www.w3schools.com">Black Widow</a>
+      <a href="https://www.w3schools.com">Daredevil</a>
+      <a href="https://www.w3schools.com">Darkhawk</a>
+      <a href="https://www.w3schools.com">Deadpool</a>
+      <a href="https://www.w3schools.com">Domino</a>
+      <a href="https://www.w3schools.com">Electro</a>
+      <a href="https://www.w3schools.com">Elektra</a>
+      <a href="https://www.w3schools.com">Elsa Bloodstone</a>
+      <a href="https://www.w3schools.com">Falcon</a>
+      <a href="https://www.w3schools.com">Fandral</a>
+      <a href="https://www.w3schools.com">Fantomex</a>
+      <a href="https://www.w3schools.com">Gamora</a>
+      <a href="https://www.w3schools.com">Ghost</a>
+      <a href="https://www.w3schools.com">Green Goblin</a>
+      <a href="https://www.w3schools.com">Gwenpool</a>
+      <a href="https://www.w3schools.com">Hawkeye</a>
+      <a href="https://www.w3schools.com">Hawkeye (Kate Bishop)</a>
+      <a href="https://www.w3schools.com">Hellcat</a>
+      <a href="https://www.w3schools.com">Karnak</a>
+      <a href="https://www.w3schools.com">Kid Kaiju</a>
+      <a href="https://www.w3schools.com">Kitty Pryde</a>
+      <a href="https://www.w3schools.com">Korath</a>
+      <a href="https://www.w3schools.com">Kraven The Hunter</a>
+      <a href="https://www.w3schools.com">Luna Snow</a>
+      <a href="https://www.w3schools.com">Misty Knight</a>
+      <a href="https://www.w3schools.com">Mystique</a>
+      <a href="https://www.w3schools.com">Nick Fury</a>
+      <a href="https://www.w3schools.com">Nightcrawler</a>
+      <a href="https://www.w3schools.com">Quicksilver</a>
+      <a href="https://www.w3schools.com">Scarlet Spider</a>
+      <a href="https://www.w3schools.com">Scorpion</a>
+      <a href="https://www.w3schools.com">Shuri</a>
+      <a href="https://www.w3schools.com">Silk</a>
+      <a href="https://www.w3schools.com">Sin</a>
+      <a href="https://www.w3schools.com">Spider-Gwen</a>
+      <a href="https://www.w3schools.com">Spider-Man</a>
+      <a href="https://www.w3schools.com">Spider-Man (Miles Morales)</a>
+      <a href="https://www.w3schools.com">Spider-Man 2099</a>
+      <a href="https://www.w3schools.com">Squirrel Girl</a>
+      <a href="https://www.w3schools.com">Sun Bird</a>
+      <a href="https://www.w3schools.com">Viper</a>
+      <a href="https://www.w3schools.com">Vulture</a>
+      <a href="https://www.w3schools.com">Wave</a>
+      <a href="https://www.w3schools.com">White Fox</a>
+      <a href="https://www.w3schools.com">Winter Soldier</a>
+      <a href="https://www.w3schools.com">Wong</a>
+      <a href="https://www.w3schools.com">X-23</a>
+      <a href="https://www.w3schools.com">Yelena Belova</a>
+      <a href="https://www.w3schools.com">Yondu</a>
+      <hr>
+  
+    <h1><b>Universal</b></h1>
+      <a href="https://www.w3schools.com">Angela</a>
+      <a href="https://www.w3schools.com">Anti-Man</a>
+      <a href="https://www.w3schools.com">Beta Ray Bill</a>
+      <a href="https://www.w3schools.com">Black Bolt</a>
+      <a href="https://www.w3schools.com">Black Dwarf</a>
+      <a href="https://www.w3schools.com">Blue Marvel</a>
+      <a href="https://www.w3schools.com">Captain Marvel</a>
+      <a href="https://www.w3schools.com">Clea</a>
+      <a href="https://www.w3schools.com">Corvus Glaive</a>
+      <a href="https://www.w3schools.com">Dormammu</a>
+      <a href="https://www.w3schools.com">Destroyer</a>
+      <a href="https://www.w3schools.com">Doctor Doom</a>
+      <a href="https://www.w3schools.com">Doctor Voodoo</a>
+      <a href="https://www.w3schools.com">Ebony Maw</a>
+      <a href="https://www.w3schools.com">Ghost Panther</a>
+      <a href="https://www.w3schools.com">Ghost Rider</a>
+      <a href="https://www.w3schools.com">Ghost Rider (Robbie Reyes)</a>
+      <a href="https://www.w3schools.com">Heimdall</a>
+      <a href="https://www.w3schools.com">Hela</a>
+      <a href="https://www.w3schools.com">Hellstorm</a>
+      <a href="https://www.w3schools.com">Hyperion</a>
+      <a href="https://www.w3schools.com">Iron Hammer</a>
+      <a href="https://www.w3schools.com">Knull</a>
+      <a href="https://www.w3schools.com">Loki</a>
+      <a href="https://www.w3schools.com">Medusa</a>
+      <a href="https://www.w3schools.com">Molecule Man</a>
+      <a href="https://www.w3schools.com">Morgan Le Fay</a>
+      <a href="https://www.w3schools.com">Nova (Richard Rider)</a>
+      <a href="https://www.w3schools.com">Nova (Sam Alexander)</a>
+      <a href="https://www.w3schools.com">Odin</a>
+      <a href="https://www.w3schools.com">Phyla-Vell</a>
+      <a href="https://www.w3schools.com">Proxima Midnight</a>
+      <a href="https://www.w3schools.com">Quasar (Avril Kincaid)</a>
+      <a href="https://www.w3schools.com">Ronan</a>
+      <a href="https://www.w3schools.com">Satana</a>
+      <a href="https://www.w3schools.com">Sentinel</a>
+      <a href="https://www.w3schools.com">Sentry</a>
+      <a href="https://www.w3schools.com">Shadow Shell</a>
+      <a href="https://www.w3schools.com">Silver Surfer</a>
+      <a href="https://www.w3schools.com">Singularity</a>
+      <a href="https://www.w3schools.com">Slapstick</a>
+      <a href="https://www.w3schools.com">Supergiant</a>
+      <a href="https://www.w3schools.com">Thane</a>
+      <a href="https://www.w3schools.com">Thanos</a>
+      <a href="https://www.w3schools.com">Thor</a>
+      <a href="https://www.w3schools.com">Thor (Jane Foster)</a>
+      <a href="https://www.w3schools.com">Ultron</a>
+      <a href="https://www.w3schools.com">Victorious</a>
+    </div>
 
-<h2>Marvel Strike Force</h2>
-<a href="https://www.w3schools.com">Character</a>
-<hr>
+    <div id="Avengers Alliance" class="w3-container menu w3-padding-32 w3-white">
+    <h1><b>Blaster</b></h1>
+      <a href="https://www.serebii.net/">Adam Warlock</a>
+      <a href="https://www.w3schools.com">Amazing Spider-Woman</a>
+      <a href="https://www.w3schools.com">Arnim Zola</a>
+      <a href="https://www.w3schools.com">Baron Mordo</a>
+      <a href="https://www.w3schools.com">Blizzard</a>
+      <a href="https://www.w3schools.com">Cable</a>
+      <a href="https://www.w3schools.com">Cannonball</a>
+      <a href="https://www.w3schools.com">Crimson Dynamo</a>
+      <a href="https://www.w3schools.com">Crossfire</a>
+      <a href="https://www.w3schools.com">Crystal</a>
+      <a href="https://www.w3schools.com">Daimon Hellstrom</a>
+      <a href="https://www.w3schools.com">Death Locket</a>
+      <a href="https://www.w3schools.com">Deathlok</a>
+      <a href="https://www.w3schools.com">Doctor Voodoo</a>
+      <a href="https://www.w3schools.com">Domino</a>
+      <a href="https://www.w3schools.com">Dr. Strange</a>
+      <a href="https://www.w3schools.com">Dragoness</a>
+      <a href="https://www.w3schools.com">Electro</a>
+      <a href="https://www.w3schools.com">Elsa Bloodstone</a>
+      <a href="https://www.w3schools.com">Fixer</a>
+      <a href="https://www.w3schools.com">Havok</a>
+      <a href="https://www.w3schools.com">Human Torch</a>
+      <a href="https://www.w3schools.com">Hybrid</a>
+      <a href="https://www.w3schools.com">Iron Man</a>
+      <a href="https://www.w3schools.com">Jack O'Lantern</a>
+      <a href="https://www.w3schools.com">Karolina Dean</a>
+      <a href="https://www.w3schools.com">M.O.D.O.K</a>
+      <a href="https://www.w3schools.com">Mephisto</a>
+      <a href="https://www.w3schools.com">Misty Knight</a>
+      <a href="https://www.w3schools.com">Morgan le Fay</a>
+      <a href="https://www.w3schools.com">Ms. Marvel</a>
+      <a href="https://www.w3schools.com">Nico Minoru</a>
+      <a href="https://www.w3schools.com">Nitro</a>
+      <a href="https://www.w3schools.com">Nova</a>
+      <a href="https://www.w3schools.com">Phoenix</a>
+      <a href="https://www.w3schools.com">Proxima Midnight</a>
+      <a href="https://www.w3schools.com">Richard Rider</a>
+      <a href="https://www.w3schools.com">Rocket Raccoon</a>
+      <a href="https://www.w3schools.com">Scarlet Witch</a>
+      <a href="https://www.w3schools.com">Shocker</a>
+      <a href="https://www.w3schools.com">Sin</a>
+      <a href="https://www.w3schools.com">Storm</a>
+      <a href="https://www.w3schools.com">Sunfire</a>
+      <a href="https://www.w3schools.com">Thane</a>
+      <a href="https://www.w3schools.com">Vector</a>
+      <a href="https://www.w3schools.com">Vision</a>
+      <a href="https://www.w3schools.com">X-Ray</a>
+      <hr>
+      
+    <h1><b>Bruiser</b></h1>
+      <a href="https://www.serebii.net/">Abomination</a>
+      <a href="https://www.w3schools.com">Absorbing Man</a>
+      <a href="https://www.w3schools.com">Anti-Venom</a>
+      <a href="https://www.w3schools.com">Ares</a>
+      <a href="https://www.w3schools.com">Beta Ray Bill</a>
+      <a href="https://www.w3schools.com">Bishop</a>
+      <a href="https://www.w3schools.com">Black Dwarf</a>
+      <a href="https://www.w3schools.com">Blob</a>
+      <a href="https://www.w3schools.com">Bulldozer</a>
+      <a href="https://www.w3schools.com">Captain Britain</a>
+      <a href="https://www.w3schools.com">Colossus</a>
+      <a href="https://www.w3schools.com">Gorgon</a>
+      <a href="https://www.w3schools.com">Groot</a>
+      <a href="https://www.w3schools.com">Heimdall</a>
+      <a href="https://www.w3schools.com">Hercules</a>
+      <a href="https://www.w3schools.com">Hulk</a>
+      <a href="https://www.w3schools.com">Hydro-Man</a>
+      <a href="https://www.w3schools.com">Hyperion</a>
+      <a href="https://www.w3schools.com">Iceman</a>
+      <a href="https://www.w3schools.com">Ironclad</a>
+      <a href="https://www.w3schools.com">Jessica Jones</a>
+      <a href="https://www.w3schools.com">Juggernaut</a>
+      <a href="https://www.w3schools.com">Kurse</a>
+      <a href="https://www.w3schools.com">Man-Ape</a>
+      <a href="https://www.w3schools.com">Molly Hayes</a>
+      <a href="https://www.w3schools.com">Morlun</a>
+      <a href="https://www.w3schools.com">Phyla-Vell</a>
+      <a href="https://www.w3schools.com">Piledriver</a>
+      <a href="https://www.w3schools.com">Ronan</a>
+      <a href="https://www.w3schools.com">Sandman</a>
+      <a href="https://www.w3schools.com">Sebastian Shaw</a>
+      <a href="https://www.w3schools.com">She-Hulk</a>
+      <a href="https://www.w3schools.com">Spider-Girl</a>
+      <a href="https://www.w3schools.com">Spider-Gwen</a>
+      <a href="https://www.w3schools.com">Thanos</a>
+      <a href="https://www.w3schools.com">Thing</a>
+      <a href="https://www.w3schools.com">Thor</a>
+      <a href="https://www.w3schools.com">Thundra</a>
+      <a href="https://www.w3schools.com">Titanium Man</a>
+      <a href="https://www.w3schools.com">Valkyrie</a>
+      <a href="https://www.w3schools.com">Venom</a>
+      <a href="https://www.w3schools.com">Volstagg</a>
+      <a href="https://www.w3schools.com">Wonder Man</a>
+      <a href="https://www.w3schools.com">X-23</a>
+      <hr>
+      
+    <h1><b>Generalist</b></h1>
+      <a href="https://www.serebii.net/">Angel</a>
+      <a href="https://www.w3schools.com">Apocalypse</a>
+      <a href="https://www.w3schools.com">Bastion</a>
+      <a href="https://www.w3schools.com">Beast</a>
+      <a href="https://www.w3schools.com">Blackheart</a>
+      <a href="https://www.w3schools.com">Blue Marvel</a>
+      <a href="https://www.w3schools.com">Colleen Wing</a>
+      <a href="https://www.w3schools.com">Destroyer</a>
+      <a href="https://www.w3schools.com">Dormammu</a>
+      <a href="https://www.w3schools.com">Faiza Hussain</a>
+      <a href="https://www.w3schools.com">Flag-Smasher</a>
+      <a href="https://www.w3schools.com">High Evolutionary</a>
+      <a href="https://www.w3schools.com">Living Monolith</a>
+      <a href="https://www.w3schools.com">Mockingbird</a>
+      <a href="https://www.w3schools.com">Moon Knight</a>
+      <a href="https://www.w3schools.com">Odin Borson</a>
+      <a href="https://www.w3schools.com">Punisher</a>
+      <a href="https://www.w3schools.com">Purple Man</a>
+      <a href="https://www.w3schools.com">Red She-Hulk</a>
+      <a href="https://www.w3schools.com">Rogue</a>
+      <a href="https://www.w3schools.com">Sentinel</a>
+      <a href="https://www.w3schools.com">Silk</a>
+      <a href="https://www.w3schools.com">Spider-Man Noir</a>
+      <a href="https://www.w3schools.com">Taskmaster</a>
+      <a href="https://www.w3schools.com">Ultron</a>
+      <a href="https://www.w3schools.com">Viper</a>
+      <a href="https://www.w3schools.com">White Tiger</a>
+      <a href="https://www.w3schools.com">Zzzax</a>
+      <hr>
+
+    <h1><b>Infiltrator</b></h1>
+      <a href="https://www.serebii.net/">A-Bomb</a>
+      <a href="https://www.w3schools.com">Agent Venom</a>
+      <a href="https://www.w3schools.com">Ant-Man</a>
+      <a href="https://www.w3schools.com">Arcade</a>
+      <a href="https://www.w3schools.com">Beetle</a>
+      <a href="https://www.w3schools.com">Black Cat</a>
+      <a href="https://www.w3schools.com">Black Widow</a>
+      <a href="https://www.w3schools.com">Cloak</a>
+      <a href="https://www.w3schools.com">Crimson Cowl</a>
+      <a href="https://www.w3schools.com">Dagger</a>
+      <a href="https://www.w3schools.com">Elektra</a>
+      <a href="https://www.w3schools.com">Enchantress</a>
+      <a href="https://www.w3schools.com">Falcon</a>
+      <a href="https://www.w3schools.com">Fandral</a>
+      <a href="https://www.w3schools.com">Gambit</a>
+      <a href="https://www.w3schools.com">Grim Reaper</a>
+      <a href="https://www.w3schools.com">Invisible Woman</a>
+      <a href="https://www.w3schools.com">Kitty Pryde</a>
+      <a href="https://www.w3schools.com">Malekith</a>
+      <a href="https://www.w3schools.com">Medusa</a>
+      <a href="https://www.w3schools.com">Miles Morales</a>
+      <a href="https://www.w3schools.com">Moondragon</a>
+      <a href="https://www.w3schools.com">Morbius</a>
+      <a href="https://www.w3schools.com">Mystique</a>
+      <a href="https://www.w3schools.com">Nebula</a>
+      <a href="https://www.w3schools.com">Nightcrawler</a>
+      <a href="https://www.w3schools.com">Psylocke</a>
+      <a href="https://www.w3schools.com">Satana</a>
+      <a href="https://www.w3schools.com">Sauron</a>
+      <a href="https://www.w3schools.com">Shanna</a>
+      <a href="https://www.w3schools.com">Spider-Man</a>
+      <a href="https://www.w3schools.com">Spiral</a>
+      <a href="https://www.w3schools.com">Star-Lord</a>
+      <a href="https://www.w3schools.com">Sugar Man</a>
+      <a href="https://www.w3schools.com">The Hood</a>
+      <a href="https://www.w3schools.com">Tigra</a>
+      <a href="https://www.w3schools.com">Toad</a>
+      <a href="https://www.w3schools.com">Vapor</a>
+      <a href="https://www.w3schools.com">Victor Mancha</a>
+      <a href="https://www.w3schools.com">Wasp</a>
+      <a href="https://www.w3schools.com">Winter Soldier</a>
+      <hr>
+      
+    <h1><b>Scrapper</b></h1>
+      <a href="https://www.serebii.net/">Angela</a>
+      <a href="https://www.w3schools.com">Avalanche</a>
+      <a href="https://www.w3schools.com">Batroc</a>
+      <a href="https://www.w3schools.com">Blade</a>
+      <a href="https://www.w3schools.com">Carnage</a>
+      <a href="https://www.w3schools.com">Chase Stein</a>
+      <a href="https://www.w3schools.com">Corvus Glaive</a>
+      <a href="https://www.w3schools.com">Daredevil</a>
+      <a href="https://www.w3schools.com">Deadpool</a>
+      <a href="https://www.w3schools.com">Drax</a>
+      <a href="https://www.w3schools.com">Executioner</a>
+      <a href="https://www.w3schools.com">Ghost Rider</a>
+      <a href="https://www.w3schools.com">Green Goblin</a>
+      <a href="https://www.w3schools.com">Grey Gargoyle</a>
+      <a href="https://www.w3schools.com">Hammerhead</a>
+      <a href="https://www.w3schools.com">Hellcat</a>
+      <a href="https://www.w3schools.com">Hogun</a>
+      <a href="https://www.w3schools.com">Iron Fist</a>
+      <a href="https://www.w3schools.com">Ka-Zar</a>
+      <a href="https://www.w3schools.com">Kamala Khan</a>
+      <a href="https://www.w3schools.com">Karn</a>
+      <a href="https://www.w3schools.com">Karnak</a>
+      <a href="https://www.w3schools.com">Luke Cage</a>
+      <a href="https://www.w3schools.com">Magik</a>
+      <a href="https://www.w3schools.com">Mantis</a>
+      <a href="https://www.w3schools.com">Omega Sentinel</a>
+      <a href="https://www.w3schools.com">Quicksilver</a>
+      <a href="https://www.w3schools.com">Sabretooth</a>
+      <a href="https://www.w3schools.com">Savin</a>
+      <a href="https://www.w3schools.com">Shatterstar</a>
+      <a href="https://www.w3schools.com">Sif</a>
+      <a href="https://www.w3schools.com">Spider-Woman</a>
+      <a href="https://www.w3schools.com">Spider-Man 2099</a>
+      <a href="https://www.w3schools.com">Spitfire</a>
+      <a href="https://www.w3schools.com">Squirrel Girl</a>
+      <a href="https://www.w3schools.com">The Owl</a>
+      <a href="https://www.w3schools.com">Thor (Jane Foster)</a>
+      <a href="https://www.w3schools.com">Union Jack</a>
+      <a href="https://www.w3schools.com">Whiplash</a>
+      <a href="https://www.w3schools.com">Wrecker</a>
+      <a href="https://www.w3schools.com">Wolverine</a>
+      <hr>
+
+    <h1><b>Tactician</b></h1>
+      <a href="https://www.serebii.net/">Baron Strucker</a>
+      <a href="https://www.w3schools.com">Baron Zemo</a>
+      <a href="https://www.w3schools.com">Black Bolt</a>
+      <a href="https://www.w3schools.com">Black Knight</a>
+      <a href="https://www.w3schools.com">Black Panther</a>
+      <a href="https://www.w3schools.com">Boomerang</a>
+      <a href="https://www.w3schools.com">Bullseye</a>
+      <a href="https://www.w3schools.com">Cammi</a>
+      <a href="https://www.w3schools.com">Captain America</a>
+      <a href="https://www.w3schools.com">Constrictor</a>
+      <a href="https://www.w3schools.com">Count Nefaria</a>
+      <a href="https://www.w3schools.com">Cul Borson</a>
+      <a href="https://www.w3schools.com">Cyclops</a>
+      <a href="https://www.w3schools.com">Doctor Doom</a>
+      <a href="https://www.w3schools.com">Doctor Octopus</a>
+      <a href="https://www.w3schools.com">Dracula</a>
+      <a href="https://www.w3schools.com">Ebony Maw</a>
+      <a href="https://www.w3schools.com">Emma Frost</a>
+      <a href="https://www.w3schools.com">Fantomex</a>
+      <a href="https://www.w3schools.com">Gamora</a>
+      <a href="https://www.w3schools.com">Hank Pym</a>
+      <a href="https://www.w3schools.com">Hawkeye</a>
+      <a href="https://www.w3schools.com">Hela</a>
+      <a href="https://www.w3schools.com">Howard the Duck</a>
+      <a href="https://www.w3schools.com">Kang</a>
+      <a href="https://www.w3schools.com">Kate Bishop</a>
+      <a href="https://www.w3schools.com">Kingpin</a>
+      <a href="https://www.w3schools.com">Kraven the Hunter</a>
+      <a href="https://www.w3schools.com">Lizard</a>
+      <a href="https://www.w3schools.com">Loki</a>
+      <a href="https://www.w3schools.com">Madame Masque</a>
+      <a href="https://www.w3schools.com">Maximus the Mad</a>
+      <a href="https://www.w3schools.com">Magneto</a>
+      <a href="https://www.w3schools.com">Moonstone</a>
+      <a href="https://www.w3schools.com">Mr. Fantastic</a>
+      <a href="https://www.w3schools.com">Mr. Sinister</a>
+      <a href="https://www.w3schools.com">Mysterio</a>
+      <a href="https://www.w3schools.com">Quake</a>
+      <a href="https://www.w3schools.com">Red Hulk</a>
+      <a href="https://www.w3schools.com">Red Skull</a>
+      <a href="https://www.w3schools.com">Rescue</a>
+      <a href="https://www.w3schools.com">Ronan</a>
+      <a href="https://www.w3schools.com">Scream</a>
+      <a href="https://www.w3schools.com">Songbird</a>
+      <a href="https://www.w3schools.com">Stegron</a>
+      <a href="https://www.w3schools.com">The Leader</a>
+      <a href="https://www.w3schools.com">Thunderball</a>
+      <a href="https://www.w3schools.com">Umar</a>
+      <a href="https://www.w3schools.com">Vulture</a>
+      <a href="https://www.w3schools.com">War Machine</a>
+      <a href="https://www.w3schools.com">Yellowjacket</a>
+      <a href="https://www.w3schools.com">Yondu</a>
+    </div>
+
+    <div id="Contest of Champions" class="w3-container menu w3-padding-32 w3-white">
+    <h1><b>Cosmic</b></h1>
+      <a href="https://www.serebii.net/">Air-Walker</a>
+      <a href="https://www.w3schools.com">Angela</a>
+      <a href="https://www.w3schools.com">Annihilus</a>
+      <a href="https://www.w3schools.com">Black Bolt</a>
+      <a href="https://www.w3schools.com">Captain Marvel</a>
+      <a href="https://www.w3schools.com">Carnage</a>
+      <a href="https://www.w3schools.com">Corvus Glaive</a>
+      <a href="https://www.w3schools.com">Cull Obsidian</a>
+      <a href="https://www.w3schools.com">Drax</a>
+      <a href="https://www.w3schools.com">Ebony Maw</a>
+      <a href="https://www.w3schools.com">Gamora</a>
+      <a href="https://www.w3schools.com">Groot</a>
+      <a href="https://www.w3schools.com">Heimdall</a>
+      <a href="https://www.w3schools.com">Hela</a>
+      <a href="https://www.w3schools.com">Hyperion</a>
+      <a href="https://www.w3schools.com">Medusa</a>
+      <a href="https://www.w3schools.com">Ms. Marvel (Kamala Khan)</a>
+      <a href="https://www.w3schools.com">Nova</a>
+      <a href="https://www.w3schools.com">Phoenix</a>
+      <a href="https://www.w3schools.com">Proxima Midnight</a>
+      <a href="https://www.w3schools.com">Ronan</a>
+      <a href="https://www.w3schools.com">Silver Surfer</a>
+      <a href="https://www.w3schools.com">Terrax</a>
+      <a href="https://www.w3schools.com">Thanos</a>
+      <a href="https://www.w3schools.com">The Champion</a>
+      <a href="https://www.w3schools.com">Thor</a>
+      <a href="https://www.w3schools.com">Venom</a>
+      <a href="https://www.w3schools.com">Vision (Aarkus)</a>
+      <hr>
+
+    <h1><b>Mutant</b></h1>
+      <a href="https://www.serebii.net/">Angel</a>
+      <a href="https://www.w3schools.com">Apocalypse</a>
+      <a href="https://www.w3schools.com">Beast</a>
+      <a href="https://www.w3schools.com">Bishop</a>
+      <a href="https://www.w3schools.com">Cable</a>
+      <a href="https://www.w3schools.com">Colossus</a>
+      <a href="https://www.w3schools.com">Cyclops</a>
+      <a href="https://www.w3schools.com">Deadpool</a>
+      <a href="https://www.w3schools.com">Domino</a>
+      <a href="https://www.w3schools.com">Emma Frost</a>
+      <a href="https://www.w3schools.com">Gambit</a>
+      <a href="https://www.w3schools.com">Havok</a>
+      <a href="https://www.w3schools.com">Iceman</a>
+      <a href="https://www.w3schools.com">Magneto</a>
+      <a href="https://www.w3schools.com">Mister Sinister</a>
+      <a href="https://www.w3schools.com">Namor</a>
+      <a href="https://www.w3schools.com">Nightcrawler</a>
+      <a href="https://www.w3schools.com">Omega Red</a>
+      <a href="https://www.w3schools.com">Professor X</a>
+      <a href="https://www.w3schools.com">Psylocke</a>
+      <a href="https://www.w3schools.com">Rogue</a>
+      <a href="https://www.w3schools.com">Sabretooth</a>
+      <a href="https://www.w3schools.com">Storm</a>
+      <a href="https://www.w3schools.com">Sunspot</a>
+      <a href="https://www.w3schools.com">Wolverine</a>
+      <a href="https://www.w3schools.com">X-23</a>
+      <hr>
+
+    <h1><b>Mystic</b></h1>
+      <a href="https://www.serebii.net/">Black Widow (Claire Voyant)</a>
+      <a href="https://www.w3schools.com">Diablo</a>
+      <a href="https://www.w3schools.com">Doctor Doom</a>
+      <a href="https://www.w3schools.com">Doctor Strange</a>
+      <a href="https://www.w3schools.com">Doctor Voodoo</a>
+      <a href="https://www.w3schools.com">Dormammu</a>
+      <a href="https://www.w3schools.com">Dragon Man</a>
+      <a href="https://www.w3schools.com">Ghost Rider</a>
+      <a href="https://www.w3schools.com">Guillotine</a>
+      <a href="https://www.w3schools.com">Iron Fist</a>
+      <a href="https://www.w3schools.com">Juggernaut</a>
+      <a href="https://www.w3schools.com">Loki</a>
+      <a href="https://www.w3schools.com">Longshot</a>
+      <a href="https://www.w3schools.com">Magik</a>
+      <a href="https://www.w3schools.com">Man-Thing</a>
+      <a href="https://www.w3schools.com">Mephisto</a>
+      <a href="https://www.w3schools.com">Mojo</a>
+      <a href="https://www.w3schools.com">Mordo</a>
+      <a href="https://www.w3schools.com">Sasquatch</a>
+      <a href="https://www.w3schools.com">Scarlet Witch</a>
+      <a href="https://www.w3schools.com">The Hood</a>
+      <a href="https://www.w3schools.com">Thor (Jane Foster)</a>
+      <a href="https://www.w3schools.com">Tigra</a>
+      <hr>
+
+    <h1><b>Science</b></h1>
+      <a href="https://www.serebii.net/">Abomination</a>
+      <a href="https://www.w3schools.com">Abomination (Reginald Fortean)</a>
+      <a href="https://www.w3schools.com">Ant-Man</a>
+      <a href="https://www.w3schools.com">Captain America</a>
+      <a href="https://www.w3schools.com">Electro</a>
+      <a href="https://www.w3schools.com">Hulk</a>
+      <a href="https://www.w3schools.com">Human Torch</a>
+      <a href="https://www.w3schools.com">Invisible Woman</a>
+      <a href="https://www.w3schools.com">Luke Cage</a>
+      <a href="https://www.w3schools.com">M.O.D.O.K</a>
+      <a href="https://www.w3schools.com">Mister Fantastic</a>
+      <a href="https://www.w3schools.com">Quake</a>
+      <a href="https://www.w3schools.com">Red Guardian</a>
+      <a href="https://www.w3schools.com">Red Hulk</a>
+      <a href="https://www.w3schools.com">Rhino</a>
+      <a href="https://www.w3schools.com">Sentry</a>
+      <a href="https://www.w3schools.com">She-Hulk</a>
+      <a href="https://www.w3schools.com">Spider-Gwen</a>
+      <a href="https://www.w3schools.com">Spider-Man</a>
+      <a href="https://www.w3schools.com">Spider-Man (Miles Morales)</a>
+      <a href="https://www.w3schools.com">Thing</a>
+      <a href="https://www.w3schools.com">Wasp</a>
+      <a href="https://www.w3schools.com">Yellowjacket</a>
+      <hr>
+
+    <h1><b>Skill</b></h1>
+      <a href="https://www.serebii.net/">Agent Venom</a>
+      <a href="https://www.w3schools.com">Black Panther</a>
+      <a href="https://www.w3schools.com">Black Widow</a>
+      <a href="https://www.w3schools.com">Blade</a>
+      <a href="https://www.w3schools.com">Crossbones</a>
+      <a href="https://www.w3schools.com">Daredevil</a>
+      <a href="https://www.w3schools.com">Elektra</a>
+      <a href="https://www.w3schools.com">Elsa Bloodstone</a>
+      <a href="https://www.w3schools.com">Falcon</a>
+      <a href="https://www.w3schools.com">Gwenpool</a>
+      <a href="https://www.w3schools.com">Hawkeye</a>
+      <a href="https://www.w3schools.com">Hit-Monkey</a>
+      <a href="https://www.w3schools.com">Karnak</a>
+      <a href="https://www.w3schools.com">Killmonger</a>
+      <a href="https://www.w3schools.com">Kingpin</a>
+      <a href="https://www.w3schools.com">Korg</a>
+      <a href="https://www.w3schools.com">Masacre</a>
+      <a href="https://www.w3schools.com">Mole Man</a>
+      <a href="https://www.w3schools.com">Moon Knight</a>
+      <a href="https://www.w3schools.com">Nick Fury</a>
+      <a href="https://www.w3schools.com">Night Trasher</a>
+      <a href="https://www.w3schools.com">Punisher</a>
+      <a href="https://www.w3schools.com">Squirrel Girl</a>
+      <a href="https://www.w3schools.com">Taskmaster</a>
+      <a href="https://www.w3schools.com">Winter Soldier</a>
+      <hr>
+
+    <h1><b>Tech</b></h1>
+      <a href="https://www.serebii.net/">Darkhawk</a>
+      <a href="https://www.w3schools.com">Doctor Octopus</a>
+      <a href="https://www.w3schools.com">Ghost</a>
+      <a href="https://www.w3schools.com">Green Goblin</a>
+      <a href="https://www.w3schools.com">Guardian</a>
+      <a href="https://www.w3schools.com">Howard the Duck</a>
+      <a href="https://www.w3schools.com">Hulkbuster</a>
+      <a href="https://www.w3schools.com">Iron Man</a>
+      <a href="https://www.w3schools.com">Kang the Conqueror</a>
+      <a href="https://www.w3schools.com">Mysterio</a>
+      <a href="https://www.w3schools.com">Nebula</a>
+      <a href="https://www.w3schools.com">Red Skull</a>
+      <a href="https://www.w3schools.com">Rocket Raccon</a>
+      <a href="https://www.w3schools.com">Sentinel</a>
+      <a href="https://www.w3schools.com">Star-Lord</a>
+      <a href="https://www.w3schools.com">Ultron</a>
+      <a href="https://www.w3schools.com">Vision</a>
+      <a href="https://www.w3schools.com">Vulture</a>
+      <a href="https://www.w3schools.com">War Machine</a>
+      <a href="https://www.w3schools.com">Warlock</a>
+      <a href="https://www.w3schools.com">Yondu</a>
+    </div><br>
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 05050515-122330</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
 </html>
+
+
